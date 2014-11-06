@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">android-recyclerview-sample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_linear_layout">Sample with LinearLayoutManager</string>
+    <string name="title_activity_grid_layout">Sample with GridLayoutManager</string>
+    <string name="title_activity_staggered_grid_layout">Sample with StaggeredGridLayoutActivity</string>
+
+</resources>

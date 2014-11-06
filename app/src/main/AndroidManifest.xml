@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kupferwerk.sample.recyclerview" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.kupferwerk.sample.recyclerview.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kupferwerk.sample.recyclerview.linearlayout.LinearLayoutActivity"
+            android:label="@string/title_activity_linear_layout"
+            android:parentActivityName="com.kupferwerk.sample.recyclerview.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kupferwerk.sample.recyclerview.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.kupferwerk.sample.recyclerview.gridlayout.GridLayoutActivity"
+            android:label="@string/title_activity_grid_layout"
+            android:parentActivityName="com.kupferwerk.sample.recyclerview.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kupferwerk.sample.recyclerview.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.kupferwerk.sample.recyclerview.staggeredgridlayout.StaggeredGridLayoutActivity"
+            android:label="@string/title_activity_staggered_grid_layout"
+            android:parentActivityName="com.kupferwerk.sample.recyclerview.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kupferwerk.sample.recyclerview.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
