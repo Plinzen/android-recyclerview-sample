@@ -1,4 +1,4 @@
-package com.kupferwerk.sample.recyclerview;
+package com.kupferwerk.sample.recyclerview.adapter;
 
 import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
@@ -8,12 +8,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.kupferwerk.sample.recyclerview.R;
 import com.kupferwerk.sample.recyclerview.model.Item;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
+public class SimpleAdapter extends RecyclerView.Adapter<SimpleAdapter.ViewHolder> {
 
    public static class ViewHolder extends RecyclerView.ViewHolder {
       public TextView txtTitle;
@@ -31,7 +32,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
    private List<Item> items;
    private Picasso picasso;
 
-   public RecyclerViewAdapter(final Activity activity, List<Item> items) {
+   public SimpleAdapter(final Activity activity, List<Item> items) {
       this.items = items;
       picasso = Picasso.with(activity.getApplicationContext());
       picasso.setLoggingEnabled(true);
@@ -43,7 +44,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
    }
 
    @Override
-   public void onBindViewHolder(RecyclerViewAdapter.ViewHolder holder, int position) {
+   public void onBindViewHolder(SimpleAdapter.ViewHolder holder, int position) {
       Item item = items.get(position);
       holder.txtTitle.setText(item.getTitle());
       holder.txtSubTitle.setText(item.getSubTitle());
@@ -52,7 +53,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
    }
 
    @Override
-   public RecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+   public SimpleAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
       // create a new view
       View v = LayoutInflater.from(parent.getContext())
             .inflate(R.layout.recyclerview_item, parent, false);

@@ -1,4 +1,4 @@
-package com.kupferwerk.sample.recyclerview;
+package com.kupferwerk.sample.recyclerview.adapter;
 
 import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.kupferwerk.sample.recyclerview.R;
 import com.kupferwerk.sample.recyclerview.model.Item;
 import com.squareup.picasso.Picasso;
 

@@ -79,7 +79,8 @@ public class MainActivity extends Activity {
       items = new ArrayList<Pair<String, Intent>>();
 
       Intent linearLayout = new Intent(this, LinearLayoutActivity.class);
-      items.add(new Pair<String, Intent>("Simple Example with LinearLayout", linearLayout));
+      items.add(new Pair<String, Intent>("Simple Example with LinearLayout and Default-Animations",
+            linearLayout));
 
       Intent gridLayout = new Intent(this, GridLayoutActivity.class);
       items.add(new Pair<String, Intent>("Simple Example with GridLayout", gridLayout));

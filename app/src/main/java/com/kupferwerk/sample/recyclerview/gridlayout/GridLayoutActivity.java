@@ -9,7 +9,7 @@ import android.view.MenuItem;
 
 import com.kupferwerk.sample.recyclerview.R;
 import com.kupferwerk.sample.recyclerview.model.Item;
-import com.kupferwerk.sample.recyclerview.StaggeredAdapter;
+import com.kupferwerk.sample.recyclerview.adapter.StaggeredAdapter;
 
 public class GridLayoutActivity extends Activity {
    private RecyclerView recyclerView;

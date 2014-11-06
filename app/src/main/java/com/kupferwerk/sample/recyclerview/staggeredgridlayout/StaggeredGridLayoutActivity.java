@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 
 import com.kupferwerk.sample.recyclerview.R;
-import com.kupferwerk.sample.recyclerview.StaggeredAdapter;
+import com.kupferwerk.sample.recyclerview.adapter.StaggeredAdapter;
 import com.kupferwerk.sample.recyclerview.model.Item;
 
 public class StaggeredGridLayoutActivity extends Activity {
