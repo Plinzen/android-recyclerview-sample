@@ -61,8 +61,8 @@ public class StaggeredAdapter extends RecyclerView.Adapter<StaggeredAdapter.View
       holder.txtTitle.setText(item.getTitle());
       holder.txtSubTitle.setText(item.getSubTitle());
       if (getItemViewType(position) == VIEWTYPE_LONG) {
-         holder.imgIcon.setImageResource(R.drawable.sample);
-         //picasso.load("http://lorempixel.com/400/200/").into(holder.imgIcon);
+         picasso.load("http://lorempixel.com/400/200/").error(R.drawable.sample)
+               .into(holder.imgIcon);
       }
    }
 

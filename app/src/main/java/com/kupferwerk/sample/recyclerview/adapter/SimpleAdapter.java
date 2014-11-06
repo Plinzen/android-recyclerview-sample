@@ -48,8 +48,7 @@ public class SimpleAdapter extends RecyclerView.Adapter<SimpleAdapter.ViewHolder
       Item item = items.get(position);
       holder.txtTitle.setText(item.getTitle());
       holder.txtSubTitle.setText(item.getSubTitle());
-      holder.imgIcon.setImageResource(R.drawable.sample);
-      //picasso.load("http://lorempixel.com/400/200/").into(holder.imgIcon);
+      picasso.load("http://lorempixel.com/400/200/").error(R.drawable.sample).into(holder.imgIcon);
    }
 
    @Override
